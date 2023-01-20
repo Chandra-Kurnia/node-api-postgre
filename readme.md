@@ -1,8 +1,7 @@
 <br />
 <p align="center">
 <div align="center">
-  <img height="150" src="https://miro.medium.com/max/678/1*zPyqgUPdcEUf5mR7Wb1kNA.jpeg"/>
-  <img height="100" src="https://www.scottbrady91.com/img/logos/swagger-banner.png"/>
+  <img height="150" src="https://miro.medium.com/max/1008/1*_qjUgj_wgzKs6gdH49i4Lg.png"/>
 </div>
   <h1 align="center">Node API Postgre</h1>
   </p>
