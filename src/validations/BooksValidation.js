@@ -72,7 +72,14 @@ const insertBookValidation = () => [
     .withMessage('Total pages cannot be empty!')
     .bail()
     .isNumeric()
-    .withMessage('Page totals must be numbers!'),
+    .withMessage('Page totals must be numbers!')
+    .bail()
+    .custom((val) => {
+      if (val <= 0) {
+        throw new Error('The number of book pages must be greater than 0!');
+      }
+      return true;
+    }),
   body('description').notEmpty().withMessage('Description cannot be empty!'),
 ];
 
@@ -106,7 +113,14 @@ const updateBookValidation = () => [
     .withMessage('Total pages cannot be empty!')
     .bail()
     .isNumeric()
-    .withMessage('Page totals must be numbers!'),
+    .withMessage('Page totals must be numbers!')
+    .bail()
+    .custom((val) => {
+      if (val <= 0) {
+        throw new Error('The number of book pages must be greater than 0!');
+      }
+      return true;
+    }),
   body('description').notEmpty().withMessage('Description cannot be empty!'),
 ];
 
@@ -115,5 +129,5 @@ module.exports = {
   insertBookValidation,
   updateBookValidation,
   deleteBookValidation,
-  getBookByPublisherValidation
+  getBookByPublisherValidation,
 };

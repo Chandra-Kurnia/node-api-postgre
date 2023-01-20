@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sw-auto": "node swagger.js"
   },
   "author": "Candra Kurniawan",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
     "pg": "^8.8.0",
+    "swagger-autogen": "^2.22.0",
     "swagger-ui-express": "^4.6.0",
     "uuid": "^9.0.0"
   },

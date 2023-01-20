@@ -59,6 +59,7 @@ const getBooksController = async (req, res) => {
 
 const insertBookController = async (req, res) => {
   try {
+    // const {tittle, author_name, publisher_id, total_page, description} = req.body;
     const result = await insertBook(req.body);
     response({
       res,
@@ -76,6 +77,7 @@ const insertBookController = async (req, res) => {
 
 const updateBookController = async (req, res) => {
   try {
+    // const {id, tittle, author_name, publisher_id, total_page, description} = req.body;
     const result = await updateBook(req.body);
     response({
       res,
